@@ -20,7 +20,7 @@
                             <i class="fa-solid fa-mobile-screen-button"></i>
                             <p>1234-4567-8901</p>
                             <i class="fa-solid fa-envelope"></i>
-                            <p>support@Contract.com</p>
+                            <p>support@contract.com</p>
                             <i class="fa-sharp fa-regular fa-clock"></i>
                             <p>Mon - Sat 9:00 - 19:00</p>
                         </div>
@@ -42,7 +42,7 @@
             <!--/Header top area-->
         </header>
 
-    <div class="header">
+    <nav>
         <div class="container">
             <div class="main-header-area">
                 <div class="logo-area">
@@ -50,14 +50,14 @@
                 </div>
                 <div class="menu-area">
                     <div class="menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
+                       <ul>
+                            <li><a class="underline" href="#">Home</a></li>
                             <li><a href="#">Page</a></li>
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">portfolio</a></li>
                             <li><a href="#">Components</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                            <li><a href="#">Contact</a></li>    
+                       </ul>
                     </div>
                     <!--/menu-->
                     <div class="form-area">
@@ -87,7 +87,7 @@
             <!--/Main header area-->
         </div>
         <!--/container-->
-    </div>
+    </nav>
     <!-- header -->
 
     <div class="banner-area">
@@ -134,7 +134,7 @@
 
     <div class="why-choose-us">
         <div class="container">
-            <h2>why choose us?</h2>
+            <h2>why <span>choose us?</span></h2>
             <p class="choose-para">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
            <div>
                  <div class="row">
@@ -167,7 +167,7 @@
     </div>
     <!--/why choose us-->
     <section class="our-service">
-        <h2>Our Service</h2>
+        <h2>Our <span>Service</span></h2>
         <div class="service-area">
             <div class="container">
                 <div class="row">
@@ -198,19 +198,26 @@
         <div class="container">
             <h2>made with love</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolore aut saepe delectus explicabo odit obcaecati quos minus? Voluptate doloremque voluptas dignissimos maxime nisi itaque quod quos, temporibus amet ab.</p>
-            <div class="nav">
+            <div class="filter-btn">
                 <button type="button" data-filter="all">SHOW ALL</button>
                 <button type="button" data-filter=".BUILDING">BUILDING</button>
-                <button type="button" data-filter=".INTERIOR DESIGN">INTERIOR DESIGN</button>
+                <button type="button" data-filter=".INTERIOR-DESIGN">INTERIOR DESIGN</button>
                 <button type="button" data-filter=".ISOLATION">ISOLATION</button>
-                <button type="button" data-filter=".PUMBING">PUMBING</button>
+                <button type="button" data-filter=".PUMBING">PLUMBING</button>
             </div>
-            <div class="grid-container">
-                <div class="grid-item-1"><img src="img/our-made-1.jpg" alt=""></div>
-                <div class="grid-item-2"><img src="img/our-made-2.jpg" alt=""></div>
-                <div class="grid-item-3"><img src="img/our-made-3.jpg" alt=""></div>
-                <div class="grid-item-4"><img src="img/our-made-4.jpg" alt=""></div>
-                <div class="grid-item-5"><img src="img/our-made-5.jpg" alt=""></div>
+            <div class="filter-container">
+                <div class="filter-item mix BUILDING"><img src="img/building-1.jpg" alt=""  class="image-filter"></div>
+                <div class="filter-item mix INTERIOR-DESIGN"><img src="img/interiorDesign-1.jpg" alt=""  class="image-filter"></div>
+                <div class="filter-item mix ISOLATION"><img src="img/isolation-1.jpg" alt="" class="image-filter"></div>
+                <div class="filter-item mix PUMBING"><img src="img/plumbing-1.jpg" alt=""  class="image-filter"></div>
+                <div class="filter-item mix BUILDING"><img src="img/building-2.jpg" alt=""  class="image-filter"></div>
+                <div class="filter-item mix INTERIOR-DESIGN"><img src="img/interiorDesign-2.jpg" alt=""  class="image-filter"></div>
+                <div class="filter-item mix ISOLATION"><img src="img/isolation-2.jpg" alt="" class="image-filter"></div>
+                <div class="filter-item mix PUMBING"><img src="img/plumbing-2.jpg" alt=""  class="image-filter"></div>
+                <div class="filter-item mix BUILDING"><img src="img/building-3.jpg" alt=""  class="image-filter"></div>
+                <div class="filter-item mix INTERIOR-DESIGN"><img src="img/interiorDesign-3.jpg" alt=""  class="image-filter"></div>
+                <div class="filter-item mix ISOLATION"><img src="img/isolation-3.jpg" alt="" class="image-filter"></div>
+                <div class="filter-item mix PUMBING"><img src="img/plumbing-3.jpg" alt=""  class="image-filter"></div>
             </div>     
         </div>
     </section>
@@ -218,7 +225,7 @@
     <div class="customer-review">
         <div class="container">
             <div class="review-text">
-                    <h2>customer-reviews</h2>
+                    <h2>customer-<span>reviews</span></h2>
                     <p class="heading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto consequuntur et quia dicta, repellendus, quae aperiam ullam est ab doloremque quos. Fuga amet sit ipsam quia. Eius explicabo quidem eos!</p>
                 <div class="review-grid">
                     <div class="review">
@@ -324,18 +331,26 @@
                     <div class="col-25">
                         <p class="about-heading">Contact Us</p>
                         <div class="address">
-                            <div><i class="fa-sharp fa-solid fa-location-dot"></i>
-                                <p>124 New Line, London UK</p>
+                            <div class="address-icon">
+                                <div><i class="fa-sharp fa-solid fa-location-dot"></i></div>
+                                <div><p>124 New Line, London UK</p></div>
                             </div>
-                            <div>
+                            <div class="address-icon">
                                 <div>
                                     <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
                                     <p>hello@psdfreebies.com</p>
                                 </div>
                             </div>
-                            <div><i class="fa-solid fa-mobile-screen"></i>
-                                <p>+44 00 00 1234</p><br>
-                                <p>+44 00 00 1234</p>
+                            <div class="address-icon">
+                                <div>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <div>
+                                    <p>+44 00 00 1234</p><br>
+                                    <p>+44 00 00 1234</p>
+                                </div>
                             </div>          
                         </div>
                     </div>
@@ -351,8 +366,25 @@
                 </footer>
         </div>
 
+        <!-- main -js -->
         <script src="js/main.js"></script>
+        <!-- Mixitup -->
+        <script src="assets/js/mixitup.min.js"></script>
+        <!-- Others -->
         <script src="assets/js/html5shiv.min.js"></script>
         <script src="assets/js/respond.min.js"></script>
+        <!-- function call -->
+        <script>
+            var mixer = mixitup('.filter-container');
+            var mixer = mixitup(containerEl);
+            var mixer = mixitup(containerEl, {
+                selectors: {
+                target: '.blog-item'
+                    },
+                    animation: {
+                    duration: 300
+                }
+            });         
+        </script>
     </body>
 </html>

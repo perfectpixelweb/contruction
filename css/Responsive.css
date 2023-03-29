@@ -108,7 +108,7 @@ Tablet Device
     /* Customer review */
     
     .review-comment{
-        padding: 10px 15px; 
+        padding: 50px 15px; 
     }
     .review-comment p{
         text-align:center;
@@ -144,10 +144,17 @@ Tablet Device
        
 
 /* ==========================
-Mobile Device 
+Mobile Device 576px
 ============================*/
 
 @media (max-width:576px){
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     .header-right{
         width: 100%;
     }
@@ -158,6 +165,13 @@ Mobile Device
     /* Hero area */
     h1{
         font-size: 30px;
+    }
+    .hero-btn .btn {
+        margin-bottom: 50px;
+    }
+    .hero-text {
+        padding:0 15px;
+        
     }
     /* About companny */
     .about-our-company .col-55{
@@ -216,7 +230,9 @@ Mobile Device
 }
 
 
-    /* =============== For Screen 332px =========== */
+    /*========================
+    For Screen 332px
+    =========================== */
 
 @media (max-width:332px){
     .logo-area{
@@ -224,17 +240,23 @@ Mobile Device
     }
     h1{
         font-size: 20px;
-        padding: 0 15px;
+        padding: 0px 0px;
     }
     .hero-text .top{
         padding: 15px 10px;
         font-size: 16px;   
     }
     .hero-btn .btn {
-        margin: 20px 15px;
+        margin: 20px 0px;
     }
     .hero-btn .btn a{
         font-size: 16px;
+    }
+    .filter-btn button {
+        padding: 10px 20px;
+        font-size: 12px;
+        margin-bottom: 10px;
+        font-weight: bold;
     }
     .why-choose-us {
         padding-bottom: 30px;

@@ -7,8 +7,7 @@
 body{
     font-family: 'futura_lt';
     font-size: 15px;
-    color: #484848;   
-    
+    color: #484848;    
 }
 
 .container {
@@ -65,8 +64,7 @@ p {
 }
 
 a{
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 ul{
@@ -98,10 +96,14 @@ img{
 
 span{
     color:#ffcb0f;
+    padding: 0;
+    margin: 0;
     
 }
 h1{
     font-size: 50px;
+    padding: 0;
+    margin: 0;
     
 }
 h2 {
@@ -148,14 +150,12 @@ header area
 .header-left p {
     padding-right: 15px;
     color:#222;
-    line-height: 40px;
-    
+    line-height: 40px;   
 }
 
 
 .header-right{
-    width: 30%;
-    
+    width: 30%;  
 }
 
 .social-icon {
@@ -166,8 +166,7 @@ header area
     padding-left: 10px;
     font-size: 15px;
     color:#222;
-    line-height: 40px;
-   
+    line-height: 40px;  
 }
 
 .social-icon i:hover {
@@ -177,14 +176,13 @@ header area
 /*=========================================
 Header-area
 ==========================================*/
-.header {
+nav {
     background: #222533;
 }
 
 .main-header-area {
     display: flex;
-    padding: 25px 0;
-    
+    padding: 25px 0;   
 }
 
 .logo-area {
@@ -195,29 +193,29 @@ Header-area
 }
 .menu-area {
     width: 80%;
-    display: flex;
-    
-    
+    display: flex;  
 }
 
 .menu {
     margin-left: auto;
 }
 
-.menu ul li {
+.menu  li {
     display: inline-block;
     padding-top: 25px;
-    padding-left: 25px;   
-    
+    margin-left: 25px;
+    padding-bottom: 5px;
 }
-.menu ul li a {
+.menu li a {
     color:#fff;
     text-transform: capitalize;
+    padding-bottom: 2px;
     
 }
 
-.menu ul li:hover a{
+.underline, .menu li:hover {
     color: #ccc;
+    border-bottom: 2px solid #fff;
 }
 /* ==========================
 form area 
@@ -311,6 +309,18 @@ form area
     font-size:40px;
 }
 
+/*=======================
+ STICKY MENU 
+ ========================*/
+nav {
+    position:sticky;
+    top:0;
+    left:0;
+    width: 100%;
+    background: rgb(34, 37, 51, 1);
+    z-index:9999;
+}
+
 
 /*================================================
 Banner area
@@ -318,16 +328,13 @@ Banner area
 .banner-area {
     background-image: url(../img/banner-bg.jpg);
     background-repeat: no-repeat;
-    text-align: center;
+    text-align:center;
     
     
-}
-.hero-area {
-    margin-left: 70px;
 }
 
 .hero-text {
-    padding-left: 60px;
+    padding:0 60px;
     
 }
 
@@ -475,12 +482,11 @@ Made with love
     padding: 30px 30px;
 }
 
-.our-made .nav {
-    margin-bottom: 30px;
-    
+.our-made .filter-btn {
+    margin-bottom: 6px;  
 }
 
-.nav button {
+ button {
     padding: 10px 30px;
     text-transform: uppercase;
     font-size: 15px;
@@ -488,10 +494,13 @@ Made with love
     background-color: transparent;
     border: none;
     cursor: pointer;
+    border: 2px solid #484848;
+    color:#000;
+    margin-bottom: 20px;
 }
 
-.nav button:hover{
-    background-color: #484848;
+.active, button:hover{
+    background-color: #fff;
 }
 
 /*====================================
@@ -501,28 +510,25 @@ Grid Gallary
 .our-made {
     background-image: url(../img/our-made-bg.jpg);
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto; 
-    padding-bottom: 100px;
-}
-.grid-container > div {
-    text-align: center;
-    font-size: 30px;
+.filter-container {
+    display:flex;
+    flex-wrap: wrap; 
+    align-items: center;  
     justify-content: center;
-    padding: 5px;
-}
-.grid-item-1 {
-    grid-column:1/span 2;
-    grid-row:1/span 2; 
-}
-.grid-container img{
-    opacity:.9;
 }
 
-.grid-container img:hover {
-   border-radius: 20px;  
-   opacity:1;
+.filter-item{
+    width:250px;
+    height:250px;
+    margin: 15px;
+    object-fit: cover;
+    
+    
+}
+.filter-item img{
+    width: 100%;
+    height: 100%;
+    
 }
 
 /*====================================
@@ -595,7 +601,6 @@ Reviews
     color:#fff;
 }
 
-
 .review img {
     width: 100px;
     height: 100px;
@@ -622,8 +627,8 @@ Question area
     font-size: 40px;
     font-family: 'futura_lt';
     color: #73757e;
-
 }
+
 .question-area input {
    padding: 15px 15px;
    width: 100%;
@@ -653,18 +658,18 @@ about area
     background-image: url(../img/footer-bg.jpg);
     padding-bottom: 100px;
     background-size: cover;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;  
 }
+
 .about-area .logo-area {
     width: 80%;
     padding-bottom: 20px;
 }
 .about-heading{
     padding: 60px 0;
-    font-size: 30px;
-   
+    font-size: 30px;  
 }
+
 .about-area .social {
     padding-top: 25px;
 }
@@ -694,7 +699,7 @@ about area
 .about-area .link ul li a::before{
     content:"\f0da";
     position: absolute;
-    color:#f2f7fa;
+    color: #ffcb0f;
     font-family: 'Font Awesome 6 free';
 	font-weight: 900;
     left: -20px;
@@ -713,14 +718,13 @@ about area
     margin-left: 15px;
 }
 
-
 .about-area .post li a::before{
     content:"";
     position: absolute;
     width: 10px;
     height: 10px;
     border-radius: 50px;
-    background-color:#fff;
+    background-color: #ffcb0f;
     top: 10px;
     left:-30px;
     margin-bottom: 10px;
@@ -729,31 +733,32 @@ about area
     color:#b7b7b7;
 }
 
-
-
 .address {
     display: flex;
     flex-wrap: wrap;
 }
 .address i {
-    color:#fff;
-    padding-bottom: 30px; 
+    color: #ffcb0f;
+    padding-bottom:50px; 
+    font-size:20px;
 }
 .address p {
     display: inline-block;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     margin-left: 15px;
+}
+.address-icon{
+    display: flex;
 }
 
 /*====================================
 Footer
 =====================================*/
 .footer-area{
-    background-color:#1a1c27;
-    
-    
+    background-color:#1a1c27;  
 }
 .footer-area  p{
     text-align: center;
     padding: 15px 0;
+    line-height: 30px;
 }
